@@ -24,7 +24,7 @@ export const GithubButton = () => {
         transform: 'translateY(0.5em)',
       }}
     >
-      <Icon as={FaGithub} w={8} h={8} fill="#0092E4" />
+      <Icon as={FaGithub} w={8} h={8} fill="blue.500" />
     </Button>
   );
 }
@@ -50,7 +50,7 @@ export const LinkedinButton = () => {
           transform: 'translateY(0.5em)',
         }}
       >
-        <Icon as={BiLogoLinkedin} w={8} h={8} fill="#0092E4" />
+        <Icon as={BiLogoLinkedin} w={8} h={8} fill="blue.500" />
       </Button>
     );
   }
@@ -76,7 +76,7 @@ export const LinkedinButton = () => {
           transform: 'translateY(0.5em)',
         }}
       >
-        <Icon as={BiLogoInstagram} w={8} h={8} fill="#0092E4" />
+        <Icon as={BiLogoInstagram} w={8} h={8} fill="blue.500" />
       </Button>
     );
   }
