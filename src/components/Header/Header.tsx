@@ -5,15 +5,13 @@ import {
   Center,
 } from "@chakra-ui/react";
 
-import { Avatar } from "@mui/material";
-
 
 import {
   GithubButton,
   InstaButton,
   LinkedinButton,
 } from "../../assets/IconButton/IconButtons";
-import user from '../../assets/user.jpg'
+
 
 export const Header = () => {
   
@@ -34,10 +32,6 @@ export const Header = () => {
         </Center>
         <Center>
           <Flex alignItems="center" gap={6}>
-            {/* <Image src={esfera} alt="esfera" {...sizeImg} />
-            <Image src={esfera} alt="esfera" {...sizeImg} />
-            <Image src={esfera} alt="esfera" {...sizeImg} /> */}
-            {/* <Avatar sx={{ width: 150, height: 150 }} alt='Dan Abrahmov' src={user} /> */}
             <Heading
               as="h1"
               fontSize="12em"

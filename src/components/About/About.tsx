@@ -6,17 +6,17 @@ const PortfolioContainer: React.FC = () => {
       <Center>
         <VStack spacing={4} align="center" maxW="600px">
           <Text fontSize="2xl" fontWeight="bold" color="blue.500">
-            Sobre Mim
+            About
           </Text>
 
           <Text textAlign="justify" fontSize="lg" color="black">
-            Meu nome é Matheus Alves, sou um Desenvolvedor Front End com mais de
-            3 anos de experiência. Tenho uma paixão pelo café e atualmente
-            trabalho como Desenvolvedor Front End Pleno na Stay Holding. Já tive
-            o privilégio de contribuir para grandes empresas e estou sempre em
-            busca de oportunidades para aprender coisas novas. Convido você a
-            explorar meu portfólio e conhecer meus projetos que destacam minha
-            habilidade em criar interfaces web envolventes e funcionais.
+          My name is Matheus Alves, I am a Front End Developer with more than
+            3 years of experience. I have a passion for coffee and currently
+            I work as a Full Front End Developer at Stay Holding. I already had
+            the privilege of contributing to large companies and I am always in
+            looking for opportunities to learn new things. I invite you to
+            explore my portfolio and discover my projects that highlight my
+            ability to create engaging and functional web interfaces.
           </Text>
         </VStack>
       </Center>
