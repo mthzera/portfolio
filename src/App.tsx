@@ -1,8 +1,8 @@
 import { Header } from "./components/Header/Header";
 import { Projects } from "./components/Body/Projects/Projects";
-import CarouselContainer from "./components/Company/Company";
+import CarouselContainer from "./components/Skills/Skills";
 import PortfolioContainer from "./components/About/About";
-import Skills from "./components/Skills/Skills";
+
 
 function App() {
   return (
@@ -10,7 +10,6 @@ function App() {
       <Header />
       <PortfolioContainer />
       <CarouselContainer />
-      <Skills/>
       <Projects />
       
     </>
