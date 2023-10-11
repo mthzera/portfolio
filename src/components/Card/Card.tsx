@@ -52,7 +52,7 @@ function ProductAddToCart({ image, name, description, acting, urlAvailable }: Pr
               color={"gray.800"}
               fontSize={"1.2em"}
             >
-              <chakra.a href={"#"} display={"flex"}>
+              <chakra.a  href={"#"} display={"flex"}>
                 <Icon as={AiOutlineLink} h={7} w={7} alignSelf={"center"} />
               </chakra.a>
             </Tooltip>

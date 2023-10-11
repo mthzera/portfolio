@@ -3,8 +3,7 @@ import { Box, Grid, Text } from "@chakra-ui/react";
 import Sbuild from "../../../assets/Images/Sbuild.svg";
 import Stayou from "../../../assets/Images/Stayou.svg";
 import ID_Integrante from "../../../assets/Images/ID-Integrante.svg";
-import Nivel1_SFM from "../../../assets/Images/Nivel1-SFM.svg";
-import Nivel2_SFM from "../../../assets/Images/Nivel2-SFM.svg";
+
 import Nivel3_SFM from "../../../assets/Images/Nivel3-SFM.svg";
 import Nivel4_SFM from "../../../assets/Images/Nivel4-SFM.svg";
 
@@ -15,21 +14,21 @@ const projects = [
     image: Nivel3_SFM,
     name: "Factory floor management",
     description: "descrição",
-    acting: 'Developer',
+    acting: 'Front End Developer',
     urlAvailable: false
   },
   {
     image: ID_Integrante,
     name: "Member scoring and ranking program",
     description: "descrição",
-    acting: 'Developer',
+    acting: 'Front End Developer',
     urlAvailable: false
   },
   {
     image: Sbuild,
     name: "Website Sbuild",
     description: "descrição",
-    acting: 'Developer',
+    acting: 'Front End Developer',
     urlAvailable: true
   },
 
@@ -37,7 +36,7 @@ const projects = [
     image: Stayou,
     name: "Website Stayou",
     description: "descrição",
-    acting: 'Developer',
+    acting: 'Full Stack Developer',
     urlAvailable: false
   },
   
