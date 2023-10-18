@@ -6,40 +6,39 @@ import ID_Integrante from "../../../assets/Images/ID-Integrante.svg";
 
 import Nivel3_SFM from "../../../assets/Images/Nivel3-SFM.svg";
 import Nivel4_SFM from "../../../assets/Images/Nivel4-SFM.svg";
-
-
+import { motion } from "framer-motion";
+import { StrictMode } from "react";
 
 const projects = [
   {
     image: Nivel3_SFM,
     name: "Factory floor management",
     description: "descrição",
-    acting: 'Front End Developer',
-    urlAvailable: false
+    acting: "Front End Developer",
+    urlAvailable: false,
   },
   {
     image: ID_Integrante,
     name: "Member scoring and ranking program",
     description: "descrição",
-    acting: 'Front End Developer',
-    urlAvailable: false
+    acting: "Front End Developer",
+    urlAvailable: false,
   },
   {
     image: Sbuild,
     name: "Website Sbuild",
     description: "descrição",
-    acting: 'Front End Developer',
-    urlAvailable: true
+    acting: "Front End Developer",
+    urlAvailable: true,
   },
 
   {
     image: Stayou,
     name: "Website Stayou",
     description: "descrição",
-    acting: 'Full Stack Developer',
-    urlAvailable: false
+    acting: "Full Stack Developer",
+    urlAvailable: false,
   },
-  
 ];
 
 export const Projects = () => {
@@ -55,20 +54,34 @@ export const Projects = () => {
         ml="15%"
         gap={6}
       >
-        {projects.map((item) => {
-          return (
-            <>
-              <Card
-                image={item.image}
-                name={item.name}
-                description={item.description}
-                acting={item.acting}
-                urlAvailable={item.urlAvailable}
-              />
-              
-            </>
-          );
-        })}
+        
+          {projects.map((item) => {
+            return (
+              <>
+              <StrictMode>
+                <motion.div
+                  className="box"
+                  initial={{ opacity: 0, scale: 0.1 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    duration: 1,
+                    delay: 0.5,
+                    ease: [0, 0.71, 0.2, 1.01],
+                  }}
+                >
+                  <Card
+                    image={item.image}
+                    name={item.name}
+                    description={item.description}
+                    acting={item.acting}
+                    urlAvailable={item.urlAvailable}
+                  />
+                </motion.div>
+                </StrictMode>
+              </>
+            );
+          })}
+       
       </Grid>
     </Box>
   );

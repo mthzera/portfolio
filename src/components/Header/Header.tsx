@@ -1,22 +1,20 @@
-import {
-  Heading,
-  Box,
-  Flex,
-  Center,
-} from "@chakra-ui/react";
-
+import { Heading, Box, Flex, Center } from "@chakra-ui/react";
 
 import {
   GithubButton,
   InstaButton,
   LinkedinButton,
 } from "../../assets/IconButton/IconButtons";
-
+import LanguageSwitch from "./components/LanguegeSwitch";
 
 export const Header = () => {
-  
   return (
     <Box bg="palette.gray.400">
+      
+        <Box bg="palette.gray.100" width={8} h={8} >
+          <LanguageSwitch />
+        </Box>
+      
       <Box>
         <Center>
           <Flex alignItems="center" gap={6}>
@@ -32,12 +30,7 @@ export const Header = () => {
         </Center>
         <Center>
           <Flex alignItems="center" gap={6}>
-            <Heading
-              as="h1"
-              fontSize="12em"
-              textAlign="center"
-              noOfLines={1}
-            >
+            <Heading as="h1" fontSize="12em" textAlign="center" noOfLines={1}>
               DEVELOPER
             </Heading>
           </Flex>
