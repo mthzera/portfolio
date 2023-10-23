@@ -6,8 +6,7 @@ import ID_Integrante from "../../../assets/Images/ID-Integrante.svg";
 
 import Nivel3_SFM from "../../../assets/Images/Nivel3-SFM.svg";
 import Nivel4_SFM from "../../../assets/Images/Nivel4-SFM.svg";
-import { motion } from "framer-motion";
-import { StrictMode } from "react";
+
 
 const projects = [
   {
@@ -48,40 +47,23 @@ export const Projects = () => {
         PROJECTS
       </Text>
       <Grid
-        templateColumns="repeat(2, 1fr)"
+        templateColumns="repeat(1, 1fr)"
         alignItems="center"
         w="70%"
         ml="15%"
         gap={6}
       >
-        
-          {projects.map((item) => {
-            return (
-              <>
-              <StrictMode>
-                <motion.div
-                  className="box"
-                  initial={{ opacity: 0, scale: 0.1 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 1,
-                    delay: 0.5,
-                    ease: [0, 0.71, 0.2, 1.01],
-                  }}
-                >
-                  <Card
-                    image={item.image}
-                    name={item.name}
-                    description={item.description}
-                    acting={item.acting}
-                    urlAvailable={item.urlAvailable}
-                  />
-                </motion.div>
-                </StrictMode>
-              </>
-            );
-          })}
-       
+        {projects.map((item) => {
+          return (
+            <Card
+              image={item.image}
+              name={item.name}
+              description={item.description}
+              acting={item.acting}
+              urlAvailable={item.urlAvailable}
+            />
+          );
+        })}
       </Grid>
     </Box>
   );
