@@ -7,6 +7,10 @@ const colors = {
     900: '#282626',
     400: '#A0AEC0',
   },
+  bg: "radial-gradient(48.89% 48.89% at 53.51% 48.89%, #012583 0%, #000C29 100%)",
+  title: "rgba(255, 255, 255, 0.80)",
+  text: "rgba(255, 255, 255, 0.50)",
+  bg_body: "linear-gradient(179deg, #000C29 0.46%, rgba(169, 194, 255, 0.70) 49.97%, #000C29 99.47%)",
 }
 
 export const theme = extendTheme({
@@ -20,7 +24,7 @@ export const theme = extendTheme({
   styles: {
     global: {
       body: {
-        bg: '#e3edf7',
+        bg: 'linear-gradient(179deg, #000C29 0.46%, rgba(169, 194, 255, 0.70) 49.97%, #000C29 99.47%)',
       },
     },
   },

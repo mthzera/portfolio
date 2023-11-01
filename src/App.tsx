@@ -1,27 +1,26 @@
 import { Header } from "./components/Header/Header";
 import { Projects } from "./components/Body/Projects/Projects";
 import CarouselContainer from "./components/Skills/Skills";
-import PortfolioContainer from "./components/About/About";
 import React, { useState } from "react";
-
+import { Box } from "@chakra-ui/react";
 
 type EnvironmentContextType = {
-  language: boolean
-  setLanguage: (value: boolean) => void
-
-}
+  language: boolean;
+  setLanguage: (value: boolean) => void;
+};
 export const EnvironmentDataContext = React.createContext<
   EnvironmentContextType | undefined
->(undefined)
+>(undefined);
 
 function App() {
-  const [language, setLanguage] = useState<boolean>(true)
+  const [language, setLanguage] = useState<boolean>(true);
   return (
-    <EnvironmentDataContext.Provider value={{setLanguage, language}}>
+    <EnvironmentDataContext.Provider value={{ setLanguage, language }}>
       <Header />
-      <PortfolioContainer />
-      <CarouselContainer />
-      <Projects />
+     
+      
+        {/* <CarouselContainer /> */}
+        <Projects />
       
     </EnvironmentDataContext.Provider>
   );

@@ -42,8 +42,8 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <Box mt={20}>
-      <Text fontSize="7xl" fontWeight={600} textAlign="center" color="blue.500">
+    <Box mt={4}>
+      <Text fontSize="7xl" fontWeight={600} textAlign="center" color="palette.title">
         PROJECTS
       </Text>
       <Grid
@@ -55,6 +55,7 @@ export const Projects = () => {
       >
         {projects.map((item) => {
           return (
+            
             <Card
               image={item.image}
               name={item.name}
@@ -62,6 +63,8 @@ export const Projects = () => {
               acting={item.acting}
               urlAvailable={item.urlAvailable}
             />
+            
+           
           );
         })}
       </Grid>

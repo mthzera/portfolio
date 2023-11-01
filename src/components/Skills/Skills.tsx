@@ -22,50 +22,16 @@ const CarouselContainer: React.FC = () => {
     "https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white",
     "https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white",
   ];
-  // const ColoredButton = chakra(Button, {
-  //   baseStyle: {
-  //     fontSize: '0.875rem',
-  //     lineHeight: '1.25rem',
-  //     padding: '2px 0.5rem',
-  //     cursor: 'pointer',
-  //     borderRadius: '0.375rem',
-  //     outline: 'none',
-  //   },
-  //   variants: {
-  //     blue: {
-  //       backgroundColor: 'rgba(59, 130, 246, 0.10)',
-  //       color: 'rgb(59 130 246)',
-  //       border: '1px solid rgb(59 130 246)',
-  //     },
-  //     yellow: {
-  //       backgroundColor: 'rgba(234, 179, 8, 0.10)',
-  //       color: 'rgb(234 179 8)',
-  //       border: '1px solid rgb(234 179 8)',
-  //     },
-  //     green: {
-  //       backgroundColor: 'rgba(34, 197, 94, 0.10)',
-  //       color: 'rgb(34 197 94)',
-  //       border: '1px solid rgb(34 197 94)',
-  //     },
-  //     red: {
-  //       backgroundColor: 'rgba(239, 68, 68, 0.10)',
-  //       color: 'rgb(239 68 68)',
-  //       border: '1px solid rgb(239 68 68)',
-  //     },
-  //   },
-  // });
-//   <Button className="blue" size="sm">
-//   Share Online
-// </Button>
+  
 
   const settings = {
     dots: false,
     infinite: true,
-    speed: 1000,
+    speed: 600,
     slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
   };
 
   return (

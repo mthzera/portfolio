@@ -2,22 +2,19 @@
 
 import {
   Flex,
-  Circle,
+  Text,
   Box,
   Image,
-  Badge,
-  useColorModeValue,
   Icon,
   chakra,
   Tooltip,
 } from "@chakra-ui/react";
-import { BsStar, BsStarFill, BsStarHalf } from "react-icons/bs";
-import { FiShoppingCart } from "react-icons/fi";
+
 import { AiOutlineLink } from "react-icons/ai";
 
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import {useEffect, useState} from "react";
+import { useEffect } from "react";
 
 interface ProjectsProps {
   image: string;
@@ -45,15 +42,14 @@ function ProductAddToCart({
     }
   }, [controls, inView]);
 
-
   return (
-  <motion.div
+    <motion.div
       ref={ref}
       initial={{ opacity: 0, scale: 0.5 }}
       animate={controls}
       transition={{ duration: 0.5 }}
     >
-      <Flex p={50} w="full" alignItems="center" justifyContent="center">
+      <Flex p={50} gap={20} w="full" alignItems="center" justifyContent="center">
         <Box w={"lg"}>
           <Image src={image} alt={`Picture of ${name}`} roundedTop="lg" />
 
@@ -92,7 +88,11 @@ function ProductAddToCart({
             </Flex>
           </Box>
         </Box>
+        <Text fontSize="3xl" color="palette.text">
+        Descrição
+      </Text>
       </Flex>
+     
     </motion.div>
   );
 }
