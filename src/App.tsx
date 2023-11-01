@@ -2,7 +2,8 @@ import { Header } from "./components/Header/Header";
 import { Projects } from "./components/Body/Projects/Projects";
 import CarouselContainer from "./components/Skills/Skills";
 import React, { useState } from "react";
-import { Box } from "@chakra-ui/react";
+
+
 
 type EnvironmentContextType = {
   language: boolean;

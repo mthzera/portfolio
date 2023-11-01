@@ -9,7 +9,7 @@ const paragraphStyle = {
 
 const PortfolioContainer: React.FC = () => {
   return (
-    <Flex gap={8} maxW="600px">
+    <Flex gap={8} maxW="600px" mt={4}>
       <Text {...paragraphStyle}>
         I am a Front End Developer with more than 3
         years of experience. I have a passion for coffee and currently I work as

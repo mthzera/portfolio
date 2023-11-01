@@ -88,7 +88,7 @@ function ProductAddToCart({
             </Flex>
           </Box>
         </Box>
-        <Text fontSize="3xl" color="palette.text">
+        <Text fontSize="3xl" color="palette.text_body">
         Descrição
       </Text>
       </Flex>

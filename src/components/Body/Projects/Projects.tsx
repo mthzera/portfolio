@@ -42,7 +42,7 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <Box mt={4}>
+    <Box mt={20}>
       <Text fontSize="7xl" fontWeight={600} textAlign="center" color="palette.title">
         PROJECTS
       </Text>
