@@ -1,9 +1,6 @@
 import { Header } from "./components/Header/Header";
 import { Projects } from "./components/Body/Projects/Projects";
-import CarouselContainer from "./components/Skills/Skills";
 import React, { useState } from "react";
-
-
 
 type EnvironmentContextType = {
   language: boolean;
@@ -15,14 +12,11 @@ export const EnvironmentDataContext = React.createContext<
 
 function App() {
   const [language, setLanguage] = useState<boolean>(true);
+
   return (
     <EnvironmentDataContext.Provider value={{ setLanguage, language }}>
       <Header />
-     
-      
-        {/* <CarouselContainer /> */}
-        <Projects />
-      
+      <Projects />
     </EnvironmentDataContext.Provider>
   );
 }

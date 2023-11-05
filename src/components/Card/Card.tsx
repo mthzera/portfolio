@@ -8,6 +8,7 @@ import {
   Icon,
   chakra,
   Tooltip,
+  Grid,
 } from "@chakra-ui/react";
 
 import { AiOutlineLink } from "react-icons/ai";
@@ -15,9 +16,10 @@ import { AiOutlineLink } from "react-icons/ai";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import MorePictures from "../Body/components/MorePictures";
 
 interface ProjectsProps {
-  image: string;
+  images: string[];
   name: string;
   description: string;
   acting: string;
@@ -25,12 +27,14 @@ interface ProjectsProps {
 }
 
 function ProductAddToCart({
-  image,
+  images,
   name,
   description,
   acting,
   urlAvailable,
 }: ProjectsProps) {
+
+
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -49,11 +53,18 @@ function ProductAddToCart({
       animate={controls}
       transition={{ duration: 0.5 }}
     >
-      <Flex p={50} gap={20} w="full" alignItems="center" justifyContent="center">
+      <Grid
+        templateColumns="repeat(2, 1fr)"
+        p={50}
+        gap={20}
+        w="full"
+        alignItems="center"
+        justifyContent="center"
+      >
         <Box w={"lg"}>
-          <Image src={image} alt={`Picture of ${name}`} roundedTop="lg" />
+          <MorePictures images={images} />
 
-          <Box p="6" borderWidth="1px" rounded="lg" shadow="lg">
+          <Box p="6" rounded="lg" shadow="lg">
             <Flex mt="1" justifyContent="space-between" alignContent="center">
               <Box
                 fontSize="xl"
@@ -88,11 +99,15 @@ function ProductAddToCart({
             </Flex>
           </Box>
         </Box>
-        <Text fontSize="3xl" color="palette.text_body">
-        Descrição
-      </Text>
-      </Flex>
-     
+        <Text
+          fontSize="2xl"
+          textIndent="2em"
+          color="palette.text_body"
+          fontWeight={600}
+        >
+          {description}
+        </Text>
+      </Grid>
     </motion.div>
   );
 }
