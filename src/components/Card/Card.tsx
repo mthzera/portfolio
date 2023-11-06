@@ -54,7 +54,7 @@ function ProductAddToCart({
       transition={{ duration: 0.5 }}
     >
       <Grid
-        templateColumns="repeat(2, 1fr)"
+        templateColumns="repeat(1, 1fr)"
         p={50}
         gap={20}
         w="full"
@@ -97,16 +97,17 @@ function ProductAddToCart({
                 {acting}
               </Box>
             </Flex>
-          </Box>
-        </Box>
-        <Text
-          fontSize="2xl"
+            <Text
+          fontSize="1xl"
           textIndent="2em"
           color="palette.text_body"
           fontWeight={600}
         >
           {description}
         </Text>
+          </Box>
+        </Box>
+       
       </Grid>
     </motion.div>
   );

@@ -23,7 +23,7 @@ const projects = [
   {
     images: [ID_Integrante],
     name: "Member scoring and ranking program",
-    description: "descrição",
+    description: "Sistema que realiza o ranking dos melhores colaboradores em cada area, facilitando o monitoramento de sua pontuacao, seja diaria, semanal ou mensal.os vencedores sao apresentados no sistema mensalmente.",
     acting: "Front End Developer",
     urlAvailable: false,
   },
